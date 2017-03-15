@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on gdlm91</title>
-    <link>/gdlm91.me/post/index.xml</link>
+    <link>http://gdlm91.me/post/index.xml</link>
     <description>Recent content in Posts on gdlm91</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Wed, 15 Mar 2017 03:00:00 +0000</lastBuildDate>
-    <atom:link href="/gdlm91.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://gdlm91.me/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hola Mundo</title>
-      <link>/gdlm91.me/post/holla-mundo/</link>
+      <link>http://gdlm91.me/post/holla-mundo/</link>
       <pubDate>Wed, 15 Mar 2017 03:00:00 +0000</pubDate>
       
-      <guid>/gdlm91.me/post/holla-mundo/</guid>
+      <guid>http://gdlm91.me/post/holla-mundo/</guid>
       <description>
 
 &lt;h2 id=&#34;hola-mundo&#34;&gt;Hola Mundo!&lt;/h2&gt;
