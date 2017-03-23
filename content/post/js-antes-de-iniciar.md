@@ -1,6 +1,9 @@
 +++
-date = "2017-03-23T03:00:00Z"
+weight = 1
+date = "2017-03-22T03:00:00Z"
 title = "JS - Antes de Iniciar"
+description = "Aclaremos que es y que NO es esta serie de publicaciones."
+tags = ["javascript"]
 +++
 
 Antes de hablar de JavaScript, quisiera dejar algunos puntos claros:
@@ -9,7 +12,7 @@ Antes de hablar de JavaScript, quisiera dejar algunos puntos claros:
 * NO soy un experto en JavaScript, asi que si ves algo que está mal puedes comentarlo y con gusto lo arreglaré.
 * De nuevo, ¡NO ES UN TUTORIAL!
 
-#### ¿Entonces qué es esto que estoy leyendo? (-.-')
+#### ¿Entonces qué es esto que estoy leyendo? :tired_face:
 
 Es un Cheat Sheet -un poquito extendido- de JavaScript que me sirva para recopilar todo lo que he venido estudiando durante los años que llevo programando, y pueda repasarlo rápidamente antes de una entrevista o una clase.
 
