@@ -31,33 +31,33 @@ canonifyurls = true
 
 # Menu Configuration
 [[menu.main]]
-  weight = 1
+  weight = 0
   identifier = "inicio"
   name = "Inicio"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
 [[menu.main]]
-  weight = 0
+  weight = 1
   identifier = "acerca_de"
   name = "Acerca de"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   url = "/#about"
 
 [[menu.links]]
-  weight = 1
+  weight = 0
   identifier = "js"
   name = "JavaScript"
   pre = "<i class=\"sidebar-button-icon icon-javascript-alt\"></i>"
   url = "/javascript"
 
 [[menu.misc]]
-  weight = 1
+  weight = 0
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://github.com/gdlm91"
 [[menu.misc]]
-  weight = 0
+  weight = 1
   identifier = "linkedin"
   name = "LinkedIn"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
@@ -74,7 +74,7 @@ canonifyurls = true
   # keywords = ["development", "next-gen"]
 
   # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
-  clearReading = true
+  clearReading = false
 
   # Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". 
   # If false it will flat categories.
