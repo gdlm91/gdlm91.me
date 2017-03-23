@@ -6,18 +6,117 @@
     <description>Recent content on gdlm91</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Wed, 15 Mar 2017 03:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Mar 2017 03:00:00 +0000</lastBuildDate>
     <atom:link href="http://gdlm91.me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hola Mundo</title>
-      <link>http://gdlm91.me/post/holla-mundo/</link>
-      <pubDate>Wed, 15 Mar 2017 03:00:00 +0000</pubDate>
+      <title>JS - Antes de Iniciar</title>
+      <link>http://gdlm91.me/post/js-antes-de-iniciar/</link>
+      <pubDate>Wed, 22 Mar 2017 03:00:00 +0000</pubDate>
       
-      <guid>http://gdlm91.me/post/holla-mundo/</guid>
+      <guid>http://gdlm91.me/post/js-antes-de-iniciar/</guid>
       <description>
 
-&lt;h2 id=&#34;hola-mundo&#34;&gt;Hola Mundo!&lt;/h2&gt;
+&lt;p&gt;Antes de hablar de JavaScript, quisiera dejar algunos puntos claros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Esto NO es un tutorial para principiantes ni avanzados.&lt;/li&gt;
+&lt;li&gt;NO soy un experto en JavaScript, asi que si ves algo que está mal puedes comentarlo y con gusto lo arreglaré.&lt;/li&gt;
+&lt;li&gt;De nuevo, ¡NO ES UN TUTORIAL!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;entonces-qué-es-esto-que-estoy-leyendo&#34;&gt;¿Entonces qué es esto que estoy leyendo? 😫&lt;/h4&gt;
+
+&lt;p&gt;Es un Cheat Sheet -un poquito extendido- de JavaScript que me sirva para recopilar todo lo que he venido estudiando durante los años que llevo programando, y pueda repasarlo rápidamente antes de una entrevista o una clase.&lt;/p&gt;
+
+&lt;p&gt;Si sufres de no poder recordar cada pequeño detalle de JS, espero esto te ayude un poco.&lt;/p&gt;
+
+&lt;p&gt;También trataré de mantener las páginas lo más resumidas posibles. Yo ODIO las publicaciones donde se extienden y le dan vueltas a un mismo tema, así que lo mantendré corto y preciso. Si quieres saber más sobre algo, trataré de dejar links para que sacies tu curiosidad.&lt;/p&gt;
+
+&lt;p&gt;Asi que sin más palabreo, dale siguiente para leer de JavaScript.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JS - Valores y sus Tipos</title>
+      <link>http://gdlm91.me/post/js-valores-y-sus-tipos/</link>
+      <pubDate>Thu, 23 Mar 2017 03:00:00 +0000</pubDate>
+      
+      <guid>http://gdlm91.me/post/js-valores-y-sus-tipos/</guid>
+      <description>
+
+&lt;p&gt;JS es un lenguaje NO tipado, por lo que -a diferencia de la mayoría de lenguajes- las variables son declaradas sin un tipo definido. Lo que significa que una variable puede tener tu nombre (string), y luego puedes sobrescribir este valor por tu edad (number).&lt;/p&gt;
+
+&lt;p&gt;Los Valores (nombre, edad) son los que llevan consigo una definición o Tipo.&lt;/p&gt;
+
+&lt;h4 id=&#34;y-de-qué-tipo-pueden-ser-los-valores&#34;&gt;¿Y de qué tipo pueden ser los valores?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;string&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;number&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;boolean&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;null&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;undefined&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;object&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;symbol&lt;/strong&gt; (este vino nuevo con ES6)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;cómo-puedo-saber-que-tipo-de-valor-tiene-asignado-una-variable&#34;&gt;¿Cómo puedo saber que tipo de valor tiene asignado una variable?&lt;/h4&gt;
+
+&lt;p&gt;Utilizando el operador &lt;code&gt;typeof&lt;/code&gt; de esta manera:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var x;
+typeof x; // &amp;quot;undefined&amp;quot;
+
+
+x = &amp;quot;Juancho&amp;quot;;
+typeof x; // &amp;quot;string&amp;quot;
+
+
+x = 7;
+typeof x; // &amp;quot;number&amp;quot;
+
+
+x = true;
+typeof x; // &amp;quot;boolean&amp;quot;
+
+
+x = null;
+typeof x; // &amp;quot;object&amp;quot; - 😕
+
+
+x = undefined;
+typeof x; // &amp;quot;undefined&amp;quot;
+
+
+x = { y: &amp;quot;z&amp;quot;};
+typeof x; // &amp;quot;object&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;El valor que retorna &lt;code&gt;typeof&lt;/code&gt; SIEMPRE es un string indicando el tipo.&lt;/p&gt;
+
+&lt;p&gt;También se puede notar que el operador no está verificando el tipo de variable -ya dijimos que las variables no tienen tipo-, sino el tipo de Valor que tiene en el momento.&lt;/p&gt;
+
+&lt;h4 id=&#34;ok-todo-pero-por-qué-null-es-de-tipo-object-no-debería-ser-tipo-null&#34;&gt;🔥 Ok todo pero, ¿Por qué null es de tipo &amp;ldquo;object&amp;rdquo;? ¿No debería ser tipo &amp;ldquo;null&amp;rdquo;?&lt;/h4&gt;
+
+&lt;p&gt;Por lo que he investigado, esto es un Bug de JavaScript que lleva años -creo que desde sus inicios-, pero que no creo que arreglen porque muchas cosas ya depende de este comportamiento extraño. Es importante tenerlo en cuenta si por ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Detectar si una variable es de tipo &amp;ldquo;object&amp;rdquo;, pero puede ser null en algún momento&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var bar = {a: &amp;quot;b&amp;quot;};
+if(...) {
+    bar = null; //alguna condición hace que sea null
+}
+
+console.log(typeof bar === &amp;quot;object&amp;quot;);  // true - oops, no queríamos esto! 😱
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Una posible solución sería algo como:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;console.log((bar !== null) &amp;amp;&amp;amp; (typeof bar === &amp;quot;object&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Más adelante veremos por qué esta solución no es del todo correcta, pero por ahora va bien!&lt;/p&gt;
 </description>
     </item>
     

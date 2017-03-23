@@ -2,19 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://gdlm91.me/post/holla-mundo/</loc>
-    <lastmod>2017-03-15T03:00:00+00:00</lastmod>
+    <loc>http://gdlm91.me/post/js-antes-de-iniciar/</loc>
+    <lastmod>2017-03-22T03:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gdlm91.me/post/js-valores-y-sus-tipos/</loc>
+    <lastmod>2017-03-23T03:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://gdlm91.me/tags/javascript/</loc>
+    <lastmod>2017-03-22T03:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://gdlm91.me/post/</loc>
-    <lastmod>2017-03-15T03:00:00+00:00</lastmod>
+    <lastmod>2017-03-22T03:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gdlm91.me/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://gdlm91.me/</loc>
-    <lastmod>2017-03-15T03:00:00+00:00</lastmod>
+    <lastmod>2017-03-22T03:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

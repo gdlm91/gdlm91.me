@@ -1,0 +1,573 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.18.1">
+    <title>JS - Valores y sus Tipos</title>
+    <meta name="author" content="Gerardo Leal">
+    <meta name="keywords" content="">
+
+    <link rel="icon" href="http://gdlm91.me/favicon.png">
+    
+
+    
+    <meta name="description" content="Son los valores quienes definen el tipo, no las variables.">
+    <meta property="og:description" content="Son los valores quienes definen el tipo, no las variables.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="JS - Valores y sus Tipos">
+    <meta property="og:url" content="/post/js-valores-y-sus-tipos/">
+    <meta property="og:site_name" content="gdlm91">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="gdlm91">
+    <meta name="twitter:description" content="Son los valores quienes definen el tipo, no las variables.">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="http://gdlm91.me/images/avatar.jpg">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    
+    
+    <link rel="stylesheet" href="http://gdlm91.me/css/style-gwlo24d2hxipxk8bi1sxik0zhlpn9t7ebcmgp9kubmmcjfzlavuyhvbqumhn.min.css" />
+    
+    
+    
+      
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" />
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://gdlm91.me/">gdlm91</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="http://gdlm91.me/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="http://gdlm91.me/images/avatar.jpg" alt="Foto de autor" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="http://gdlm91.me/#about">
+          <img class="sidebar-profile-picture" src="http://gdlm91.me/images/avatar.jpg" alt="Foto de autor" />
+        </a>
+        <h4 class="sidebar-profile-name">Gerardo Leal</h4>
+        
+          <h5 class="sidebar-profile-bio">Full Stack Web Developer apasionado por JavaScript &lt;3</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://gdlm91.me/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Inicio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://gdlm91.me/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">Acerca de</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/gdlm91" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/gdlm91/" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      JS - Valores y sus Tipos
+    </h1>
+  
+  <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2017-03-23T03:00:00Z">
+      
+  Marzo 23, 2017
+
+    </time>
+  
+  
+
+</div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<p>JS es un lenguaje NO tipado, por lo que -a diferencia de la mayoría de lenguajes- las variables son declaradas sin un tipo definido. Lo que significa que una variable puede tener tu nombre (string), y luego puedes sobrescribir este valor por tu edad (number).</p>
+
+<p>Los Valores (nombre, edad) son los que llevan consigo una definición o Tipo.</p>
+
+<h4 id="y-de-qué-tipo-pueden-ser-los-valores">¿Y de qué tipo pueden ser los valores?</h4>
+
+<ul>
+<li><strong>string</strong></li>
+<li><strong>number</strong></li>
+<li><strong>boolean</strong></li>
+<li><strong>null</strong></li>
+<li><strong>undefined</strong></li>
+<li><strong>object</strong></li>
+<li><strong>symbol</strong> (este vino nuevo con ES6)</li>
+</ul>
+
+<h4 id="cómo-puedo-saber-que-tipo-de-valor-tiene-asignado-una-variable">¿Cómo puedo saber que tipo de valor tiene asignado una variable?</h4>
+
+<p>Utilizando el operador <code>typeof</code> de esta manera:</p>
+
+<pre><code class="language-javascript">var x;
+typeof x; // &quot;undefined&quot;
+
+
+x = &quot;Juancho&quot;;
+typeof x; // &quot;string&quot;
+
+
+x = 7;
+typeof x; // &quot;number&quot;
+
+
+x = true;
+typeof x; // &quot;boolean&quot;
+
+
+x = null;
+typeof x; // &quot;object&quot; - 😕
+
+
+x = undefined;
+typeof x; // &quot;undefined&quot;
+
+
+x = { y: &quot;z&quot;};
+typeof x; // &quot;object&quot;
+</code></pre>
+
+<p>El valor que retorna <code>typeof</code> SIEMPRE es un string indicando el tipo.</p>
+
+<p>También se puede notar que el operador no está verificando el tipo de variable -ya dijimos que las variables no tienen tipo-, sino el tipo de Valor que tiene en el momento.</p>
+
+<h4 id="ok-todo-pero-por-qué-null-es-de-tipo-object-no-debería-ser-tipo-null">🔥 Ok todo pero, ¿Por qué null es de tipo &ldquo;object&rdquo;? ¿No debería ser tipo &ldquo;null&rdquo;?</h4>
+
+<p>Por lo que he investigado, esto es un Bug de JavaScript que lleva años -creo que desde sus inicios-, pero que no creo que arreglen porque muchas cosas ya depende de este comportamiento extraño. Es importante tenerlo en cuenta si por ejemplo:</p>
+
+<p><strong>Detectar si una variable es de tipo &ldquo;object&rdquo;, pero puede ser null en algún momento</strong></p>
+
+<pre><code class="language-javascript">var bar = {a: &quot;b&quot;};
+if(...) {
+    bar = null; //alguna condición hace que sea null
+}
+
+console.log(typeof bar === &quot;object&quot;);  // true - oops, no queríamos esto! 😱
+</code></pre>
+
+<p>Una posible solución sería algo como:</p>
+
+<pre><code class="language-javascript">console.log((bar !== null) &amp;&amp; (typeof bar === &quot;object&quot;));
+</code></pre>
+
+<p>Más adelante veremos por qué esta solución no es del todo correcta, pero por ahora va bien!</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">ETIQUETADO EN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://gdlm91.me/tags/javascript/">javascript</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://gdlm91.me/post/js-antes-de-iniciar/" data-tooltip="JS - Antes de Iniciar">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://gdlm91.me/tags/javascript/" data-tooltip="Javascript">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2017 Gerardo Leal. Todos los derechos reservados
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://gdlm91.me/post/js-antes-de-iniciar/" data-tooltip="JS - Antes de Iniciar">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">ANTERIOR</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://gdlm91.me/tags/javascript/" data-tooltip="Javascript">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">SIGUIENTE</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+        <i class="fa fa-google-plus"></i><span>Compartir en Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+        <i class="fa fa-facebook-official"></i><span>Compartir en Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fgdlm91.me%2fpost%2fjs-valores-y-sus-tipos%2f">
+        <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="http://gdlm91.me/images/avatar.jpg" alt="Foto de autor" />
+    
+    <h4 id="about-card-name">Gerardo Leal</h4>
+    
+      <div id="about-card-bio">Full Stack Web Developer apasionado por JavaScript &lt;3</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Web Developer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Buenos Aires
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Buscar" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no se encontraron artículos</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://gdlm91.me/post/js-antes-de-iniciar/">
+                <h3 class="media-heading">JS - Antes de Iniciar</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Antes de hablar de JavaScript, quisiera dejar algunos puntos claros:
+ Esto NO es un tutorial para principiantes ni avanzados. NO soy un experto en JavaScript, asi que si ves algo que está mal puedes comentarlo y con gusto lo arreglaré. De nuevo, ¡NO ES UN TUTORIAL!  ¿Entonces qué es esto que estoy leyendo? 😫 Es un Cheat Sheet -un poquito extendido- de JavaScript que me sirva para recopilar todo lo que he venido estudiando durante los años que llevo programando, y pueda repasarlo rápidamente antes de una entrevista o una clase.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://gdlm91.me/post/js-valores-y-sus-tipos/">
+                <h3 class="media-heading">JS - Valores y sus Tipos</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">JS es un lenguaje NO tipado, por lo que -a diferencia de la mayoría de lenguajes- las variables son declaradas sin un tipo definido. Lo que significa que una variable puede tener tu nombre (string), y luego puedes sobrescribir este valor por tu edad (number).
+Los Valores (nombre, edad) son los que llevan consigo una definición o Tipo.
+¿Y de qué tipo pueden ser los valores?  string number boolean null undefined object symbol (este vino nuevo con ES6)  ¿Cómo puedo saber que tipo de valor tiene asignado una variable?</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no se encontraron artículos"
+         data-message-one="1 artículo encontrado"
+         data-message-other="{n} artículos encontrados">
+         2 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://gdlm91.me/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+
+
+<script src="http://gdlm91.me/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+  
+
+
+    
+  </body>
+</html>
+
