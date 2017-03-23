@@ -3,9 +3,9 @@ date = "2017-03-23T03:00:00Z"
 title = "JS - Antes de Iniciar"
 +++
 
-Antes de hablar de JavaScript, quisiera dejar algunos puntos claros. 
+Antes de hablar de JavaScript, quisiera dejar algunos puntos claros:
 
-* Esto NO es un tutorial para principiantes (ni para ningún nivel de Skill)
+* Esto NO es un tutorial para principiantes ni avanzados.
 * NO soy un experto en JavaScript, asi que si ves algo que está mal puedes comentarlo y con gusto lo arreglaré.
 * De nuevo, ¡NO ES UN TUTORIAL!
 
