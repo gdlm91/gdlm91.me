@@ -22,6 +22,8 @@ publishDir = "docs"
 paginate = 7
 canonifyurls = true
 
+enableEmoji = true
+
 [author]
   name = "Gerardo Leal"
   bio = "Full Stack Web Developer apasionado por JavaScript <3"
@@ -43,12 +45,12 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   url = "/#about"
 
-[[menu.links]]
-  weight = 0
-  identifier = "js"
-  name = "JavaScript"
-  pre = "<i class=\"sidebar-button-icon icon-javascript-alt\"></i>"
-  url = "/javascript"
+#[[menu.links]]
+#  weight = 0
+#  identifier = "js"
+#  name = "JavaScript"
+#  pre = "<i class=\"sidebar-button-icon icon-javascript-alt\"></i>"
+#  url = "/javascript"
 
 [[menu.misc]]
   weight = 0
