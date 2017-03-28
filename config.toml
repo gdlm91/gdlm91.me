@@ -18,6 +18,7 @@ defaultContentLanguage = "es-es"
 title = "gdlm91"
 theme = "hugo-tranquilpeak-theme"
 publishDir = "docs"
+googleAnalytics = "UA-96383088-1"
 
 paginate = 7
 canonifyurls = true
