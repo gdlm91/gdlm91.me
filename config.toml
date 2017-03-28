@@ -33,13 +33,13 @@ enableEmoji = true
 
 # Menu Configuration
 [[menu.main]]
-  weight = 0
+  weight = 1
   identifier = "inicio"
   name = "Inicio"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
 [[menu.main]]
-  weight = 1
+  weight = 0
   identifier = "acerca_de"
   name = "Acerca de"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
@@ -53,13 +53,13 @@ enableEmoji = true
 #  url = "/javascript"
 
 [[menu.misc]]
-  weight = 0
+  weight = 1
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://github.com/gdlm91"
 [[menu.misc]]
-  weight = 1
+  weight = 0
   identifier = "linkedin"
   name = "LinkedIn"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
@@ -97,7 +97,7 @@ enableEmoji = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebarBehavior = 1
+  sidebarBehavior = 2
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
